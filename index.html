@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+<body>
+  <div class="site-content">
+    <div class="site-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg my-4">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+              <img src="imgs/logo.png" alt="Logo" class="d-inline-block align-text-top">
+              Weather
+              <span>tagline goes here</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Live camers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-body">
+        <div class="background-Body">
+          <div class="container">
+            <form class="row pt-5">
+              <div class="col-12">
+                <input type="text" class="form-control" id="search" placeholder="Find your location...">
+                <button  class="btn btn-primary mb-3" id="submit">Find</button>
+              </div>
+            </form>
+  
+            <div class="site-weather pt-5">
+              <div class="forecast-container">
+                  <div class="col-4">
+                    <div class="today forecast">
+                      <div class="forecast-header" id="today">
+                        <p class="currentDay">Saturday</p>
+                        <p class="currentDate">19August</p>
+                      </div>
+    
+                      <div class="forecast-content" id="current">
+                        <h4 class="location">london</h4>
+                        <div class="degree">
+                          <p class="num">31<span>o</span>C</p>
+                          
+                          <div class="forecast-icon">
+                            <img src="imgs/113.png" alt="" width="90" class="icon">
+                          </div>	
+                        </div>
+    
+                        <div class="custom">Clear</div>
+                        <span><img src="imgs/icon-umberella.png" alt="">20%</span>
+                        <span><img src="imgs/icon-wind.png" alt="">18km/h</span>
+                        <span><img src="imgs/icon-compass.png" alt="">East</span>
+                      </div>          
+                    </div>
+                  </div>
+  
+                 <!-- Day1 -->
+                  <div class="col-4 forecast-Background">
+                    <div class="forecast">
+                      <div class="forecast-header">
+                          <div class="Day1">Sunday</div>
+                      </div>
+                      <div class="forecast-content">
+                          <div class="forecast-icon">
+                              <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48" class="icon1">
+                          </div>
+                          <div class="degree maxDegree1">38.8<span>o</span>C</div>
+                          <div class="anotherDegree minDegree1">24.2<span>o</span></div>
+                          <div class="custom1">Sunny</div>
+                      </div>
+                    </div>
+                  </div> 
+  
+                  <!-- Day 2 -->
+                  <div class="col-4">
+                    <div class="forecast">
+                      <div class="forecast-header center">
+                          <div class="Day2">Monday</div>
+                      </div>
+                      <div class="forecast-content">
+                          <div class="forecast-icon">
+                              <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48" class="icon2">
+                          </div>
+                          <div class="degree maxDegree2">39.8<span>o</span>C</div>
+                          <div class="anotherDegree minDegree2">24.2<span>o</span></div>
+                          <div class="custom2">Sunny</div>
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-md-8">
+              <form>
+                <input type="text" class="form-control" id="search" placeholder="Enter your email to subscribe...">
+                <button type="submit" class="btn btn-primary mb-3 subscribe">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1">
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer> <!-- .site-footer -->
+    </div>
+  </div>
+
+    
+  
+  <!-- ----------------------------------------------------------- -->
+  <script src="js/javaS.js"></script>
+</body>
+</html>
+
